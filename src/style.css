@@ -1,0 +1,150 @@
+body {
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  font-size: 20px;
+  background-image: url("background.png");
+}
+header {
+  display: flex;
+  height: 50px;
+  width: 50%;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background-color: green;
+  border-radius: 5px;
+}
+#main {
+  display: flex;
+  justify-content: center;
+}
+#popular,
+#ranted {
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+#popular:hover,
+#ranted:hover {
+  color: black;
+}
+#popular_content,
+#ranted_content {
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  cursor: pointer;
+}
+.item {
+  width: 30%;
+  min-width: 400px;
+  margin: 1.5%;
+  text-align: center;
+}
+.inner {
+  margin-bottom: 10px;
+}
+#pagination {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+#previous,
+#next {
+  width: 150px;
+  font-size: 20px;
+  height: 40px;
+  color: white;
+  background-color: green;
+  cursor: pointer;
+  border: 0px;
+  border-radius: 5px;
+}
+#serial {
+  list-style: none;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+#serial li {
+  margin-bottom: 10px;
+}
+#seasons li,
+#season li {
+  font-size: 20px;
+  cursor: pointer;
+}
+#seasons li:hover,
+#season li:hover {
+  color: darkred;
+  transition: 1s;
+}
+
+#episode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#episode li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+#big_text {
+  font-size: 30px;
+  margin: 15px 0 20px 0;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 850px) {
+  header {
+    width: 100%;
+  }
+  #popular_content {
+    margin: 0px;
+  }
+  .item {
+    min-width: 40%;
+    font-size: 15px;
+  }
+  #serial li,
+  #episode li {
+    font-size: 17px;
+  }
+  #big_text {
+    font-size: 25px;
+    margin: 10px 0 15px 0;
+  }
+  #pagination {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 480px) {
+  header {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .item {
+    min-width: 90%;
+  }
+  #serial li,
+  #episode li {
+    font-size: 15px;
+  }
+  #big_text {
+    font-size: 20px;
+    margin: 8px 0 12px 0;
+  }
+  #previous,
+  #next {
+    width: 100px;
+    font-size: 16px;
+    height: 30px;
+  }
+}
